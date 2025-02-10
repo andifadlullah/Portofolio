@@ -1,0 +1,271 @@
+/* INDEX HTML*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.indexbody {
+    font-family: 'Times New Roman', sans-serif;
+    background: linear-gradient(rgb(53, 53, 53), rgb(87, 87, 87), rgb(222, 222, 222));
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    color: black;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li {
+    color: grey;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 100%;
+    padding: 0;
+}
+
+/* BUTTON */
+.Resume {
+    padding: 1rem 1.5rem;
+    background: rgb(179, 179, 179);
+    border: 1.5px solid rgb(202, 202, 202);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.Resume:hover {
+    box-shadow: rgba(210, 25, 25, 0.04) 0px 3px 5px;
+}
+
+/* SECTION TITLES */
+.section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: grey;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0 auto;
+}
+
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: grey;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+/* LAYOUT */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+/* NAVIGATION */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    position: relative;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a {
+    color: black;
+}
+
+nav ul li a {
+    color: black;
+}
+
+/* BURGER MENU */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* HERO SECTION */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: auto;
+    padding: 7.7rem 0;
+    text-align: center;
+}
+
+.hero-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.hero-right img {
+    width: 90%;
+    max-width: 400px;
+}
+
+/* SERVICE SECTION */
+#service {
+    background-color: rgb(14, 14, 14);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 1rem 0;
+    }
+    
+    .nav ul.active {
+        display: flex;
+    }
+    
+    .burger {
+        display: block;
+    }
+
+    #hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-name {
+        font-size: 1,5rem;
+    }
+}
+/*END INDEX HTML*/
+
+
+
+
+
+
+
+/* ABOUT HTML*/
+
+
+/* About Section */
+.abouthtml{
+    text-align: center;
+    background: linear-gradient(rgb(53, 53, 53), rgb(87, 87, 87), rgb(222, 222, 222));
+}
+
+#about h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about li {
+    font-size: 1.2rem;
+    background: #737373;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: aliceblue;
+}
+
+/* Responsif untuk layar kecil (HP) */
+@media screen and (max-width: 768px) {
+    #about h1 {
+        font-size: 1.5rem;
+    }
+
+    #about li {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+
+/*skill section*/
+
+#services ul{
+    display: flex;
+    justify-content: center; /* Sejajarkan ke tengah */
+    flex-wrap: wrap; /* Jika layar kecil, tetap responsif */
+    list-style: none; /* Hilangkan bullet point */
+    padding: 0;
+}
+
+.skills ul li {
+    width: auto;
+    text-align: center;
+}
+
+#services{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+#services h2, li {
+    color: rgb(6, 6, 6);
+}
+#services li{
+    font-size: 1.2rem;
+    background: #737373;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: aliceblue;
+}
